@@ -5,3 +5,7 @@ body {
   background: oklch(98.4% 0.003 247.858); /* slate-50 */
   font-family: "Inter", sans-serif;
 }
+
+a.active hr {
+  display: block;
+}
