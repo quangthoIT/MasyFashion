@@ -61,7 +61,7 @@ export const assets = {
 
 export const products = [
   {
-    _id: "A001",
+    id: "A001",
     name: "Sheepskin Leather Jacket",
     description:
       "High-quality sheepskin leather jacket, durable and stylish for all occasions.",
@@ -74,7 +74,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A002",
+    id: "A002",
     name: "Suede Office Jacket",
     description: "Premium suede jacket with a smart, professional style.",
     price: 200,
@@ -86,7 +86,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A003",
+    id: "A003",
     name: "Two-Layer Notched Collar Coat",
     description:
       "Classic two-layer coat with a notched collar, tailored for a modern fit.",
@@ -99,7 +99,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A004",
+    id: "A004",
     name: "Two-Layer Stand Collar Coat",
     description: "Warm and premium two-layer coat with a stand-up collar.",
     price: 215,
@@ -111,7 +111,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A005",
+    id: "A005",
     name: "Two-Layer Flat Collar Coat",
     description:
       "Elegant two-layer coat, perfect for cold weather and formal wear.",
@@ -124,7 +124,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A006",
+    id: "A006",
     name: "Bomber Jacket",
     description: "Durable bomber jacket with a stylish urban look.",
     price: 150,
@@ -136,7 +136,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A007",
+    id: "A007",
     name: "V-Neck Sweater",
     description: "Soft and warm V-neck sweater made of premium knit fabric.",
     price: 175,
@@ -148,7 +148,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A008",
+    id: "A008",
     name: "Crew Neck Sweater",
     description: "Classic crew neck sweater for a timeless casual look.",
     price: 150,
@@ -160,7 +160,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A009",
+    id: "A009",
     name: "Men’s Knit Sweater",
     description: "Comfortable men’s sweater designed for daily wear.",
     price: 160,
@@ -172,7 +172,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A010",
+    id: "A010",
     name: "Sleeveless Knit Sweater",
     description: "Trendy sleeveless knit sweater for layering and comfort.",
     price: 85,
@@ -184,7 +184,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A011",
+    id: "A011",
     name: "Navy Cooling Polo Shirt",
     description:
       "Lightweight polo shirt with cooling fabric, perfect for summer wear.",
@@ -197,7 +197,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A012",
+    id: "A012",
     name: "White Patterned Cotton Polo",
     description: "Comfortable cotton polo shirt with subtle white patterns.",
     price: 75,
@@ -209,7 +209,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A013",
+    id: "A013",
     name: "White Cooling Polo Shirt",
     description: "Breathable white polo shirt with cooling technology.",
     price: 75,
@@ -221,7 +221,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A014",
+    id: "A014",
     name: "Gray Cooling Polo Shirt",
     description: "Soft gray polo shirt with modern fit and breathable fabric.",
     price: 75,
@@ -233,7 +233,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A015",
+    id: "A015",
     name: "Dark Gray Cooling Polo Shirt",
     description: "Stylish dark gray polo with moisture-wicking fabric.",
     price: 75,
@@ -245,7 +245,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A016",
+    id: "A016",
     name: "Classic Vest",
     description: "Elegant blazer for formal occasions and business meetings.",
     price: 220,
@@ -257,7 +257,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A017",
+    id: "A017",
     name: "Luxury Vest",
     description:
       "Versatile blazer with a tailored fit for everyday office wear.",
@@ -270,7 +270,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A018",
+    id: "A018",
     name: "Modern Vest",
     description: "Trendy slim fit blazer designed for a sharp look.",
     price: 230,
@@ -282,7 +282,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A019",
+    id: "A019",
     name: "Down & Sheepskin Overcoat",
     description: "Warm overcoat made with down feathers and sheepskin lining.",
     price: 185,
@@ -294,7 +294,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A020",
+    id: "A020",
     name: "Sheepskin Lined Down Overcoat",
     description: "Stylish overcoat with sheepskin lining and durable finish.",
     price: 180,
@@ -306,7 +306,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A021",
+    id: "A021",
     name: "Classic Down Overcoat",
     description: "Comfortable winter overcoat with soft lining for warmth.",
     price: 200,
@@ -318,7 +318,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A022",
+    id: "A022",
     name: "Formal Trousers",
     description:
       "Tailored dress pants made from premium fabric for comfort and elegance.",
@@ -331,7 +331,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A023",
+    id: "A023",
     name: "Slim Fit Trousers",
     description:
       "Fashionable slim fit dress pants, perfect for office and formal wear.",
@@ -344,7 +344,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A024",
+    id: "A024",
     name: "Classic Trousers",
     description:
       "Durable and stylish dress pants suitable for daily office use.",
@@ -357,7 +357,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A025",
+    id: "A025",
     name: "Formal Trousers",
     description: "Comfortable regular fit dress pants with fine stitching.",
     price: 110,
@@ -369,7 +369,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A026",
+    id: "A026",
     name: "Classic Blue Jeans",
     description: "Trendy and durable blue jeans for everyday wear.",
     price: 115,
@@ -381,7 +381,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A027",
+    id: "A027",
     name: "Casual Men’s Shorts",
     description: "Lightweight and breathable shorts for casual outings.",
     price: 85,
@@ -393,7 +393,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A028",
+    id: "A028",
     name: "Regular Fit Shorts",
     description: "Comfortable fit shorts made of soft cotton fabric.",
     price: 80,
@@ -405,7 +405,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A029",
+    id: "A029",
     name: "Denim Shorts",
     description: "Casual denim shorts for a youthful, energetic style.",
     price: 80,
@@ -417,7 +417,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A030",
+    id: "A030",
     name: "Checked Long Sleeve Shirt",
     description: "Classic checked shirt with long sleeves for a formal look.",
     price: 100,
@@ -429,7 +429,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A031",
+    id: "A031",
     name: "Plain Long Sleeve Shirt",
     description: "Simple and elegant plain long sleeve shirt.",
     price: 115,
@@ -441,7 +441,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A032",
+    id: "A032",
     name: "Slim Fit Long Sleeve Shirt",
     description: "Slim fit shirt with long sleeves, perfect for office wear.",
     price: 110,
@@ -453,7 +453,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A033",
+    id: "A033",
     name: "Patterned Long Sleeve Shirt",
     description:
       "Stylish patterned long sleeve shirt for both casual and formal use.",
@@ -466,7 +466,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A034",
+    id: "A034",
     name: "Striped Long Sleeve Shirt",
     description: "Classic striped long sleeve shirt made of breathable cotton.",
     price: 105,
@@ -478,7 +478,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A035",
+    id: "A035",
     name: "Short Sleeve Casual Shirt",
     description: "Lightweight short sleeve shirt for summer wear.",
     price: 85,
@@ -490,7 +490,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A036",
+    id: "A036",
     name: "Classic Short Sleeve Shirt",
     description: "Casual short sleeve shirt with a simple and clean design.",
     price: 85,
@@ -502,7 +502,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A037",
+    id: "A037",
     name: "Printed Short Sleeve Shirt",
     description: "Trendy printed short sleeve shirt for casual outings.",
     price: 85,
@@ -514,7 +514,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A038",
+    id: "A038",
     name: "Cotton Short Sleeve Shirt",
     description: "Soft cotton short sleeve shirt for everyday comfort.",
     price: 85,
@@ -526,7 +526,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A039",
+    id: "A039",
     name: "Checked Short Sleeve Shirt",
     description: "Classic checked short sleeve shirt with breathable fabric.",
     price: 80,
@@ -538,7 +538,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A040",
+    id: "A040",
     name: "Striped Short Sleeve Shirt",
     description: "Lightweight striped short sleeve shirt for summer wear.",
     price: 80,
@@ -550,7 +550,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A041",
+    id: "A041",
     name: "Plain Short Sleeve Shirt",
     description: "Minimalist short sleeve shirt with a modern cut.",
     price: 90,
@@ -562,7 +562,7 @@ export const products = [
     bestseller: true,
   },
   {
-    _id: "A042",
+    id: "A042",
     name: "Short-Sleeve Cotton Shirt",
     description:
       "Lightweight cotton short-sleeve shirt, breathable and ideal for summer wear.",
@@ -575,7 +575,7 @@ export const products = [
     bestseller: false,
   },
   {
-    _id: "A043",
+    id: "A043",
     name: "Casual Short-Sleeve Shirt",
     description:
       "Comfortable and stylish short-sleeve shirt, perfect for casual and office wear.",

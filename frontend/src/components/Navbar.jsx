@@ -83,20 +83,20 @@ const Navbar = () => {
           visible ? "w-[55%]" : "w-0"
         }`}
       >
-        <div className="flex flex-col gap-4 p-8 text-gray-700">
+        <div className="flex flex-col text-gray-700">
           {/* Close */}
           <div
-            className="flex items-center justify-between"
+            className="flex items-center justify-between p-6"
             onClick={() => setVissible(false)}
           >
             <X className="w-8 h-8 cursor-pointer" />
           </div>
           {/* Navbar */}
-          <ul className="flex flex-col gap-4 mt-3">
+          <ul className="flex flex-col text-lg">
             {/* Home */}
             <NavLink
               to="/"
-              className="uppercase border-b border-gray-700"
+              className="uppercase border-y border-gray-400 px-6 py-2"
               onClick={() => setVissible(false)}
             >
               Home
@@ -104,7 +104,7 @@ const Navbar = () => {
             {/* Collection */}
             <NavLink
               to="/collection"
-              className="uppercase border-b border-gray-700"
+              className="uppercase border-b border-gray-400 px-6 py-2"
               onClick={() => setVissible(false)}
             >
               Collection
@@ -112,7 +112,7 @@ const Navbar = () => {
             {/* About */}
             <NavLink
               to="/about"
-              className="uppercase border-b border-gray-700"
+              className="uppercase border-b border-gray-400 px-6 py-2"
               onClick={() => setVissible(false)}
             >
               About
@@ -120,7 +120,7 @@ const Navbar = () => {
             {/* Contact */}
             <NavLink
               to="/contact"
-              className="uppercase border-b border-gray-700"
+              className="uppercase border-b border-gray-400 px-6 py-2"
               onClick={() => setVissible(false)}
             >
               Contact
