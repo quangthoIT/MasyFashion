@@ -6,27 +6,27 @@ const Hero = () => {
       <div className="w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-0">
         <div className="text-gray-700">
           <div className="flex items-center gap-2">
-            <p className="w-8 md:w-12 h-[2px] bg-gray-700"></p>
-            <p className="font-medium text-lg md:text-2xl uppercase">
+            <p className="w-8 md:w-12 h-[1px] md:h-[2px] bg-gray-700"></p>
+            <p className="font-medium text-base sm:text-lg md:text-xl lg:text-2xl uppercase">
               Our BestSellers
             </p>
           </div>
 
-          <h1 className="text-4xl sm:py-3 lg:text-6xl leading-relaxed prata-regular">
+          <h1 className="text-2xl sm:py-3 md:text-3xl lg:text-5xl leading-relaxed prata-regular">
             Latest Arrivals
           </h1>
 
           <div className="flex items-center gap-2 text-gray-700">
-            <p className="font-medium text-lg md:text-2xl uppercase">
+            <p className="font-medium text-base sm:text-lg md:text-xl lg:text-2xl uppercase">
               Shop Now
             </p>
-            <p className="w-8 md:w-12 h-[2px] bg-gray-700"></p>
+            <p className="w-8 md:w-12 h-[1px] md:h-[2px] bg-gray-700"></p>
           </div>
         </div>
       </div>
 
       {/* Hero Right Side */}
-      <img src={assets.hero} alt="" className="w-full  sm:w-1/2" />
+      <img src={assets.hero} alt="" className="w-full sm:w-1/2 h-60 md:h-80 lg:h-full" />
     </div>
   );
 };

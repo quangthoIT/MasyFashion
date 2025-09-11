@@ -51,17 +51,17 @@ const Navbar = () => {
       {/* Icons */}
       <div className="flex items-center gap-6">
         {/* Search */}
-        <Search className="cursor-pointer w-8 h-8 text-gray-700" />
+        <Search className="cursor-pointer w-7 h-7 sm:w-8 sm:h-8 text-gray-700" />
         {/* Cart */}
         <Link to="/cart" className="relative">
-          <Handbag className="cursor-pointer w-8 h-8 text-gray-700" />
+          <Handbag className="cursor-pointer w-7 h-7 sm:w-8 sm:h-8 text-gray-700" />
           <p className="absolute bottom-[-5px] right-[-5px] bg-gray-700 text-white w-5 h-5 flex items-center justify-center rounded-full">
             0
           </p>
         </Link>
         {/* User */}
         <div className="group relative">
-          <CircleUser className="cursor-pointer w-8 h-8 text-gray-700 " />
+          <CircleUser className="cursor-pointer w-7 h-7 sm:w-8 sm:h-8 text-gray-700 " />
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-2 ">
             <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-700 rounded-md shadow-md">
               <p className="cursor-pointer hover:text-black">My Account</p>
@@ -72,12 +72,12 @@ const Navbar = () => {
         </div>
         {/* Menu Mobile */}
         <Menu
-          className="sm:hidden w-8 h-8 text-gray-700 cursor-pointer"
+          className="sm:hidden w-7 h-7 text-gray-700 cursor-pointer"
           onClick={() => setVissible(true)}
         />
       </div>
 
-      {/* Sidebar Mobile */}
+      {/* Mobile Menu Siderbar */}
       <div
         className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-slate-100 transition-all duration-500 ease-in-out ${
           visible ? "w-[55%]" : "w-0"
