@@ -1,7 +1,7 @@
 import { HandCoins, Headset, RefreshCcw, Truck } from "lucide-react";
 const OurPolicy = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 gap-y-8 sm:flex justify-around sm:gap-2 text-center py-12 text-sm sm:text-base text-gray-700">
+    <div className="grid grid-cols-2 gap-4 gap-y-8 sm:flex justify-around sm:gap-2 text-center py-10 text-sm sm:text-base text-gray-700">
       <div>
         <Truck className="w-12 h-12 mx-auto mb-5" />
         <p className="font-semibold">Free Shipping</p>
