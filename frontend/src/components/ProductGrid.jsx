@@ -55,7 +55,7 @@ const ProductGrid = ({ filterProducts, setSortType }) => {
             setSortType(e.target.value);
             setCurrentPage(1); // Reset về trang 1 khi sort
           }}
-          className="border border-gray-300 text-sm px-2"
+          className="border border-gray-300 text-sm px-2 cursor-pointer"
         >
           <option value="default">Default Sorting</option>
           <option value="priceLowToHigh">Price: Low to High</option>

@@ -41,7 +41,7 @@ const FilterSidebar = ({
           ].map((category) => (
             <p key={category} className="flex gap-2">
               <input
-                className="w-3"
+                className="w-3 cursor-pointer"
                 type="checkbox"
                 value={category}
                 onChange={toggleCategory}
@@ -63,7 +63,7 @@ const FilterSidebar = ({
           {["Topwear", "Bottomwear", "Outerwear"].map((t) => (
             <p key={t} className="flex gap-2">
               <input
-                className="w-3"
+                className="w-3 cursor-pointer"
                 type="checkbox"
                 value={t}
                 onChange={toggleType}

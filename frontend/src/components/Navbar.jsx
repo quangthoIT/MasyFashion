@@ -1,10 +1,18 @@
 import { assets } from "../assets/assets";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { CircleUser, Handbag, Menu, Search, X } from "lucide-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVissible] = useState(false);
+  const { setShowSearchBar } = useContext(ShopContext);
+  const navigate = useNavigate();
+
+  const handleSearchClick = () => {
+    setShowSearchBar(true);
+    navigate("/collection");
+  };
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
@@ -51,7 +59,10 @@ const Navbar = () => {
       {/* Icons */}
       <div className="flex items-center gap-6">
         {/* Search */}
-        <Search className="cursor-pointer w-7 h-7 sm:w-8 sm:h-8 text-gray-700" />
+        <Search
+          onClick={handleSearchClick}
+          className="cursor-pointer w-7 h-7 sm:w-8 sm:h-8 text-gray-700"
+        />
         {/* Cart */}
         <Link to="/cart" className="relative">
           <Handbag className="cursor-pointer w-7 h-7 sm:w-8 sm:h-8 text-gray-700" />

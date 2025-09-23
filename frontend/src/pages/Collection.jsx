@@ -4,7 +4,7 @@ import FilterSidebar from "../components/FilterSidebar";
 import ProductGrid from "../components/ProductGrid";
 
 const Collection = () => {
-  const { products } = useContext(ShopContext);
+  const { products, search, showSearchBar } = useContext(ShopContext);
   const [showFilter, setShowFilter] = useState(false);
   const [filterProducts, setFilterProducts] = useState([]);
   const [subCategory, setSubCategory] = useState([]);
@@ -29,6 +29,13 @@ const Collection = () => {
 
   const applyFilters = () => {
     let productsCopy = products.slice();
+
+    if (showSearchBar && search) {
+      productsCopy = productsCopy.filter((item) =>
+        item.name.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+
     if (subCategory.length > 0) {
       productsCopy = productsCopy.filter((item) =>
         subCategory.includes(item.subCategory)
@@ -57,7 +64,7 @@ const Collection = () => {
 
   useEffect(() => {
     applyFilters();
-  }, [subCategory, type]);
+  }, [subCategory, type, search, showSearchBar]);
 
   useEffect(() => {
     sortProduct();
