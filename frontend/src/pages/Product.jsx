@@ -6,8 +6,7 @@ import RelatedProducts from "../components/RelatedProducts";
 
 const Product = () => {
   const { productId } = useParams(); // Lấy ID sản phẩm từ URL
-  console.log(productId);
-  const { products, currency } = useContext(ShopContext); // Lấy dữ liệu sản phẩm và đơn vị tiền tệ từ context
+  const { products, currency, addToCart } = useContext(ShopContext); // Lấy dữ liệu sản phẩm và đơn vị tiền tệ từ context
   const [productData, setProductData] = useState(false); // State lưu thông tin sản phẩm hiện tại
   const [image, setImage] = useState(""); // State lưu hình ảnh đang được hiển thị chính
   const [size, setSize] = useState(""); // State lưu kích thước (size) được chọn
@@ -17,7 +16,6 @@ const Product = () => {
     products.map((item) => {
       if (item.id === productId) {
         setProductData(item); // Lưu thông tin sản phẩm
-        console.log(item);
         setImage(item.image[0]); // Mặc định hiển thị ảnh đầu tiên
         return;
       }
@@ -95,7 +93,10 @@ const Product = () => {
             </div>
           </div>
           {/* Add to Cart */}
-          <button className="bg-gray-700 text-white text-sm md:text-base py-3 px-8 uppercase active:bg-gray-900 cursor-pointer">
+          <button
+            onClick={() => addToCart(productData.id, size)}
+            className="bg-gray-700 text-white text-sm md:text-base py-3 px-8 uppercase active:bg-gray-900 cursor-pointer"
+          >
             Add to cart
           </button>
 

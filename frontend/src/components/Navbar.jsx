@@ -6,7 +6,7 @@ import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVissible] = useState(false);
-  const { setShowSearchBar } = useContext(ShopContext);
+  const { setShowSearchBar, getCartCount } = useContext(ShopContext);
   const navigate = useNavigate();
 
   const handleSearchClick = () => {
@@ -66,8 +66,8 @@ const Navbar = () => {
         {/* Cart */}
         <Link to="/cart" className="relative">
           <Handbag className="cursor-pointer w-7 h-7 sm:w-8 sm:h-8 text-gray-700" />
-          <p className="absolute bottom-[-5px] right-[-5px] bg-gray-700 text-white w-5 h-5 flex items-center justify-center rounded-full">
-            0
+          <p className="absolute text-sm bottom-[-5px] right-[-5px] bg-gray-700 text-white w-5 h-5 flex items-center justify-center rounded-full">
+            {getCartCount()}
           </p>
         </Link>
         {/* User */}
