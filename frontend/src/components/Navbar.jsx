@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between py-5 font-medium">
+    <div className="flex items-center justify-between pt-3 font-medium">
       {/* Logo */}
       <Link to={"/"}>
         <img src={assets.logo} alt="Logo" className="w-36 cursor-pointer" />

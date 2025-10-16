@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { Star } from "lucide-react";
 import RelatedProducts from "../components/RelatedProducts";
+import Lottie from "lottie-react";
+import LoadingFiles from "../assets/LoadingFiles.json";
 
 const Product = () => {
   const { productId } = useParams(); // Lấy ID sản phẩm từ URL
@@ -145,7 +147,9 @@ const Product = () => {
       />
     </div>
   ) : (
-    <div className="opacity-0">Loading...</div>
+    <div className="flex justify-center items-center mt-20">
+      <Lottie animationData={LoadingFiles} loop={true} className="w-96 h-40" />
+    </div>
   );
 };
 

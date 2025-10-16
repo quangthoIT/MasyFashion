@@ -14,26 +14,31 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({}); // Giỏ hàng
 
   // Hàm thêm sản phẩm vào giỏ hàng
-  const addToCart = async (itemsId, size) => {
-    let cartData = structuredClone(cartItems); // Tạo bản sao của cartItems để không sửa trực tiếp state gốc
+  const addToCart = (itemsId, size) => {
+  if (!size) {
+    toast.error("Please select size!");
+    return; // Dừng ngay nếu chưa chọn size
+  }
 
-    // Nếu sản phẩm đã tồn tại trong giỏ
+  setCartItems((prev) => {
+    // Clone từ state mới nhất
+    const cartData = structuredClone(prev);
+
+    // Thêm hoặc tăng số lượng sản phẩm
     if (cartData[itemsId]) {
-      if (!size) {
-        toast.error("Please Select Size!"); // Nếu chưa chọn size thì báo lỗi
-      }
-
       if (cartData[itemsId][size]) {
-        cartData[itemsId][size] += 1; // Nếu size này đã có - tăng số lượng
+        cartData[itemsId][size] += 1;
       } else {
-        cartData[itemsId][size] = 1; // Nếu chưa có size này - thêm mới size
+        cartData[itemsId][size] = 1;
       }
     } else {
-      cartData[itemsId] = {}; // Nếu sản phẩm chưa có trong giỏ - khởi tạo đối tượng mới
-      cartData[itemsId][size] = 1;
+      cartData[itemsId] = { [size]: 1 };
     }
-    setCartItems(cartData); // Cập nhật lại giỏ hàng
-  };
+
+    toast.success("Added to cart!");
+    return cartData; // Trả về state mới
+  });
+};
 
   // Hàm tính tổng số lượng sản phẩm trong giỏ
   const getCartCount = () => {
